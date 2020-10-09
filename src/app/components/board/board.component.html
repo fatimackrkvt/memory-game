@@ -1,0 +1,6 @@
+<p> Try # : {{tryCount}} </p>
+<p> Score : {{matchPairCount}} </p>
+<div class="flex-container">
+<app-card *ngFor="let card of cards" [cardItem]="card" (decide)="decide($event)">
+</app-card>
+</div>
